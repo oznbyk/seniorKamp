@@ -20,12 +20,12 @@ namespace Application.Features.Models.Queries.GetListModelByDynamic
         public Dynamic Dynamic { get; set; }
         public PageRequest PageRequest { get; set; }
 
-        public class GetListModelByDynmaicQueryHandler : IRequestHandler<GetListModelByDynamicQuery, ModelListModel>
+        public class GetListModelByDynamicQueryHandler : IRequestHandler<GetListModelByDynamicQuery, ModelListModel>
         {
             private readonly IMapper _mapper;
             private readonly IModelRepository _modelRepository;
 
-            public GetListModelByDynmaicQueryHandler(IMapper mapper, IModelRepository modelRepository)
+            public GetListModelByDynamicQueryHandler(IMapper mapper, IModelRepository modelRepository)
             {
                 _mapper = mapper;
                 _modelRepository = modelRepository;

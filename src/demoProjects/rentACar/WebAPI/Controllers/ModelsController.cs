@@ -13,7 +13,7 @@ namespace WebAPI.Controllers
     public class ModelsController : BaseController
     {
 
-        [HttpGet]
+        [HttpGet("GetList")]
         public async Task<ActionResult> GetList([FromQuery] PageRequest pageRequest)
         {
             GetListModelQuery getListModelQuery = new GetListModelQuery { PageRequest = pageRequest};
